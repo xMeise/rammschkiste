@@ -2,8 +2,8 @@
 
 Apps for the Desktop
 ---
-IA Writer
-PDF Expert
+IA Writer			# minimalistic type programm
+PDF Expert			# scan documents and manage pdf files
 XCode
 Discord
 Chat Mate for Whattsapp
