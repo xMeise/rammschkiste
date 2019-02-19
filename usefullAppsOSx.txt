@@ -1,3 +1,14 @@
-## usefullAppsOSx - version 0.1 written by xMeise
+## usefullAppsOSx - version 0.1.1 written by xMeise
+
+Apps for the Desktop
+---
+IA Writer
+PDF Expert
+XCode
+Discord
+Chat Mate for Whattsapp
+Adobe Creative Cloud
+Docker
+Karabiner Elements
 
 
