@@ -10,5 +10,8 @@ Chat Mate for Whattsapp
 Adobe Creative Cloud
 Docker
 Karabiner Elements
+Alfred
+Moom
+f.lux
 
 
