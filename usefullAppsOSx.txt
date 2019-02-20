@@ -13,3 +13,10 @@ Karabiner Elements		# keyboard customizer
 Alfred				# boost your efficiency with hotkeys, keywords, text expansion and more
 Moom				# move, zoom and arrange windows
 f.lux				# warms up computer display
+
+helpfull Terminal adds
+---
+zsh 				# Z-Shell 
+* sudo apt-get install zsh
+oh-my-zsh			# community-driven framework for zsh
+* sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
