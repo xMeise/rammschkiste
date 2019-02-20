@@ -4,14 +4,12 @@ Apps for the Desktop
 ---
 IA Writer			# minimalistic type programm
 PDF Expert			# scan documents and manage pdf files
-XCode
-Discord
-Chat Mate for Whattsapp
-Adobe Creative Cloud
-Docker
-Karabiner Elements
-Alfred
-Moom
-f.lux
-
-
+XCode				# coding environment for swift 
+Discord				# chat and teamspeak tool
+Chat Mate for Whattsapp		# as the name indicates
+Adobe Creative Cloud		# photoediting software and more
+Docker				# run applications by using container
+Karabiner Elements		# keyboard customizer
+Alfred				# boost your efficiency with hotkeys, keywords, text expansion and more
+Moom				# move, zoom and arrange windows
+f.lux				# warms up computer display
