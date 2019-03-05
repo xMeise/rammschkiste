@@ -1,26 +1,34 @@
-## usefullAppsOSx - version 0.1.1 written by xMeise
+## usefullAppsOSx - version 0.1.2 written by xMeise 03/2019
 
 Apps for the Desktop
 ---
-IA Writer			# minimalistic type programm
-PDF Expert			# scan documents and manage pdf files
-XCode				# coding environment for swift 
-Discord				# chat and teamspeak tool
+IA Writer					# minimalistic type programm
+PDF Expert					# scan documents and manage pdf files
+XCode						# coding environment for swift
+Discord						# chat and teamspeak tool
 Chat Mate for Whattsapp		# as the name indicates
 Adobe Creative Cloud		# photoediting software and more
-Docker				# run applications by using container
-Karabiner Elements		# keyboard customizer
-Alfred				# boost your efficiency with hotkeys, keywords, text expansion and more
-Moom				# move, zoom and arrange windows
-f.lux				# warms up computer display
+Docker						# run applications by using container
+Karabiner Elements			# keyboard customizer
+Alfred						# boost your efficiency with hotkeys, keywords, text expansion 
+Moom						# move, zoom and arrange windows
+f.lux						# warms up computer display
+Sublime						# Texteditor
 
 helpfull Terminal adds
 ---
-zsh 				# Z-Shell 
-*
+zsh 				# Z-Shell
+
 apt-get install zsh
 chsh -s $(which zsh)
 
 oh-my-zsh			# community-driven framework for zsh
-*
+
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+autojump      		# easy move through the file system
+
+
+Sublime 			# Launch Sublime Text frim the command line 
+
+ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
