@@ -68,3 +68,4 @@ brew install autojump-zsh
 # Sublime 			# Launch Sublime Text frim the command line 
 
 ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+git config --global core.editor "subl -n -w"
