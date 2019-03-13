@@ -1,4 +1,4 @@
-## usefullAppsOSx - version 0.1.4 written by xMeise 03/2019
+## usefullAppsOSx - version 0.2.0 written by xMeise 03/2019
 
 Apps for the Desktop
 ---
@@ -15,6 +15,7 @@ Alfred						# boost your efficiency with hotkeys, keywords, text expansion
 Moom						# move, zoom and arrange windows
 f.lux						# warms up computer display
 Sublime						# Texteditor
+Sublime Merge				# Git Client done Sublime
 
 helpfull Terminal adds
 ---
