@@ -1,0 +1,4 @@
+## usefullMacOsCommands - version 0.0.1 written by xMeise 03/2019
+
+ioreg -l -w 0 | grep Capacity			# Akkustatus, ursprüngliche Kapzität, Ladezyklen
+ioreg -l -w 0 | grep IOMACAddress		# MAC Adressen
