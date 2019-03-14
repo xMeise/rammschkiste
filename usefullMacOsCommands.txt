@@ -1,4 +1,11 @@
-## usefullMacOsCommands - version 0.0.1 written by xMeise 03/2019
+## usefullMacOsCommands - version 0.0.2 written by xMeise 03/2019
 
 ioreg -l -w 0 | grep Capacity			# Akkustatus, ursprüngliche Kapzität, Ladezyklen
 ioreg -l -w 0 | grep IOMACAddress		# MAC Adressen
+
+diskutil list							# manage devices
+hdiutil attach Disk_Image.dmg			# install software and storage data
+
+sudo tmutil disable 					# turn off time maschine auto backup
+
+
