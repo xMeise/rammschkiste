@@ -8,4 +8,7 @@ hdiutil attach Disk_Image.dmg			# install software and storage data
 
 sudo tmutil disable 					# turn off time maschine auto backup
 
+ssh-keygen -t rsa						# create private and public keypair
+ssh-copy-id pi@192.168.1.193			# copy private key to remote computer
+ssh pi@192.168.1.193 					# ssh remote login
 
