@@ -1,1 +1,6 @@
-## basicLinuxCommands - version 0.0.1 written by xMeise 03/2019
+## basicLinuxCommands - version 0.0.2 written by xMeise 03/2019
+
+
+# system
+uname -a 							# shows kernel version
+

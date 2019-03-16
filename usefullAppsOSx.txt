@@ -1,6 +1,6 @@
-## usefullAppsOSx - version 0.2.0 written by xMeise 03/2019
+## usefullAppsOSx - version 0.2.1 written by xMeise 03/2019
 
-Apps for the Desktop
+# Apps for the Desktop
 ---
 iTerm2						# Terminal 
 IA Writer					# minimalistic type programm 
@@ -17,7 +17,7 @@ f.lux						# warms up computer display
 Sublime						# Texteditor
 Sublime Merge				# Git Client done Sublime
 
-helpfull Terminal adds
+# helpfull Terminal adds
 ---
 # zsh 				# Z-Shell
 
@@ -70,3 +70,9 @@ brew install autojump-zsh
 
 ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 git config --global core.editor "subl -n -w"
+
+# glances			# monitor your system
+
+brew install glances
+
+
