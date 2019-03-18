@@ -1,5 +1,6 @@
 ## usefullAppsOSx - version 0.2.1 written by xMeise 03/2019
 
+
 # Apps for the Desktop
 ---
 iTerm2						# Terminal 
@@ -75,4 +76,4 @@ git config --global core.editor "subl -n -w"
 
 brew install glances
 
-
+vin

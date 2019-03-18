@@ -4,7 +4,7 @@
 # system
 ioreg -l -w 0 | grep Capacity			# Akkustatus, ursprüngliche Kapzität, Ladezyklen
 ioreg -l -w 0 | grep IOMACAddress		# MAC Adressen
-unsame -a 								# shows kernel version
+uname -a 								# shows kernel version
 
 diskutil list							# manage devices
 hdiutil attach Disk_Image.dmg			# install software and storage data

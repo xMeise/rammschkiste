@@ -1,0 +1,15 @@
+# basicNetwork - version 0.0.1 written by xMeise 03/2019
+
+
+NAT (Network Address Translation)
+#Ziel- oder Quell-IP-Adressen eines Datenpakets können ausgetauscht werden.
+#Überschreitet ein Datenpaket die Netzwerkgrenze zwischen öffentlichen und lokalen Netzwerk,
+#tauscht der Router die IP-Adressen passend aus. NAT-Tabelle.
+#Lokales Netz ist durch die Adressübersetzung vor dem Internet verborgen und geschützt. 
+#IPv6 macht die Notwendigkeit der Adressübersetzung überflüssig da ausreichend öffentliche
+#IP-Adressen für jedes Endgerät vorhanden sind.  
+
+PAT (Port-and-Address-Translation)
+#Während bei NAT eine IP-Adresse 1:1 durch eine andere IP-Adresse ersetzt wird, teilen sich
+#bei PAT mehrere IP-Adressen nach der Übersetzung eine einzige IP-Adresse. EIne exakte Zuordnung
+#der Datenpakete findet durch Portnummern statt.
