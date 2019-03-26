@@ -1,0 +1,44 @@
+## gitCommands - version 0.0.1 written by xMeise 03/2019
+
+
+git init												# initiate git directory
+
+git clone /path/to/repository 							# 
+git clone username@host:path/to/repository				#
+git clone https://github.com/xMeise/rammschkiste.git 	#
+git clone -b [branch_Name] /path/to/repository			# clone a specific branch
+
+git add .												# adds files in the local repository and stages them for commit
+git reset HEAD YOUR-FILE								# unstage a file
+git commit -m 'First commit'							# commits the tracked changes
+git reset --soft HEAD~1									# remove a commit
+
+git remote add origin remote repository URL				# sets new remote
+git remote -v 											# verifies remote URL
+
+git checkout -b feature_x								# creates new branch and jumps into it
+git checkout master										# jumps into master branch
+git branch -d feature_x 								# delete feature_x branch
+
+git push -u origin master								# push the changes to remote repository
+
+git pull 												# keep repository up to date, fetch modification and merge branch
+
+
+## most important oh-my-zsh git aliases
+
+
+gst														# git status
+gss 													# git status -s
+gp 														# git push
+gl 														# git pull
+gm 														# git merge
+gfo 													# git fetch origin
+gco 													# git checkout
+gcm 													# git checkout master
+gc 														# git commit -v
+gb 														# git branch
+gaa 													# git add all
+gm 														# git merge
+glog 													# git log --oneline --decorate --color
+gts 													# git tag -s
