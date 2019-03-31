@@ -2,5 +2,9 @@
 
 
 # system
-uname -a 							# shows kernel version
-
+uname -a 							                  # shows kernel version
+id                                      # shows info about current user
+sudo adduser BENUTZERNAME               # add new user
+sudo deluser BENUTZERNAME               # delete user
+sudo usermod -aG sudo BENUTZERNAME      # switch user into usergroup sudo
+passwd                                  # change login password
