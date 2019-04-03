@@ -1,4 +1,4 @@
-## usefullAppsOSx - version 0.2.1 written by xMeise 03/2019
+## usefullAppsOSx - written by xMeise 03/2019
 
 
 # Apps for the Desktop
@@ -17,6 +17,7 @@ Moom						# move, zoom and arrange windows
 f.lux						# warms up computer display
 Sublime						# Texteditor
 Sublime Merge				# Git Client done Sublime
+refind 						# bootmanager
 
 # helpfull Terminal adds
 ---
@@ -75,5 +76,9 @@ git config --global core.editor "subl -n -w"
 # glances			# monitor your system
 
 brew install glances
+
+# refind 
+
+./install-refind
 
 vin

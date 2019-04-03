@@ -1,10 +1,31 @@
-## basicLinuxCommands - version 0.0.2 written by xMeise 03/2019
+## basicLinuxCommands - written by xMeise 03/2019
 
 
 # system
-uname -a 							                  # shows kernel version
+uname -a 							    # shows kernel version, options all
+service udev status 					# manage services, on old system
+systemctl status udev                   # manage services, on newer systems
+
+ifconfig 								# check systems current ip address
+ip addr show eth0						# check systems current ip address
 id                                      # shows info about current user
+
 sudo adduser BENUTZERNAME               # add new user
 sudo deluser BENUTZERNAME               # delete user
 sudo usermod -aG sudo BENUTZERNAME      # switch user into usergroup sudo
 passwd                                  # change login password
+
+df -ah 									# check free disk space, options all file systems, human readable
+du -sh directory/						# check the size of a directory
+
+sudo netstat	-tulpn					# check for open ports, options tcp, udp, listening, port, number, with sudo you can view the PID
+
+ps aux | grep [processName]				# check CPU usage of a process
+top
+htop
+
+mount /dev/sda2 /mnt 					# mount volume sda2 on /mnt
+mount 									# check all mounted devices
+less /etc/fstab							# automatically mount volume at boot
+
+man [command] 							# manual pages of a command, to look up something what you don´t know

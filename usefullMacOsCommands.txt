@@ -5,7 +5,7 @@
 ioreg -l -w 0 | grep Capacity			# Akkustatus, ursprüngliche Kapzität, Ladezyklen
 ioreg -l -w 0 | grep IOMACAddress		# MAC Adressen
 uname -a 								# shows kernel version
-sudo nvram bootargs="-v"				# boot macos in verbose mode
+sudo nvram boot-args="-v"				# boot macos in verbose mode
 
 diskutil list							# manage devices
 hdiutil attach Disk_Image.dmg			# install software and storage data
@@ -18,3 +18,11 @@ ssh-keygen -t rsa						# create private and public keypair
 ssh-copy-id pi@192.168.1.193			# copy private key to remote computer
 ssh pi@192.168.1.193 					# ssh remote login
 
+# security
+
+gpg -c datei.txt						# encrypt a file or folder with password
+
+# file management
+
+rsync --progress Datei Dateikopie 		# copy file and shows progress
+ls -tlr 								# list directory sorted by creation date

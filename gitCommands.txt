@@ -1,5 +1,7 @@
-## gitCommands - version 0.0.1 written by xMeise 03/2019
+## gitCommands - version 0.0.2 written by xMeise 03/2019
 
+
+curl -u 'xMeise:Pipirella&1976' https://api.github.com/user/repos -d "{\"name\":\"$repoName\"}"
 
 git init												# initiate git directory
 

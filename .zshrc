@@ -65,6 +65,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  git-extras
   bundler
   dotenv
   osx
@@ -72,6 +73,8 @@ plugins=(
   rbenv
   ruby
   zsh-syntax-highlighting
+  web-search
+  extract
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -118,37 +121,14 @@ alias jj='autojump --stat'
 alias lt='ls -tld **/*(m-2)'
 alias h='history'							# shows used commands
 alias tree='tree -Csuh'						# nice alternative to 'recursive ls'
+alias zshrc='subl ~/.zshrc'
 
 #alias qfind="find . -name "                # qfind:    Quickly search for file
 #ff () { /usr/bin/find . -name "$@" ; }     # ff:       Find file under the current directory
 #ffs () { /usr/bin/find . -name "$@"'*' ; } # ffs:      Find file whose name starts with a given string
 #ffe () { /usr/bin/find . -name '*'"$@" ; } # ffe:      Find file whose name ends with a given string
-mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
-
-function mydf()         # Pretty-print of 'df' output.
-{                       # Inspired by 'dfc' utility.
-    for fs ; do
-
-        if [ ! -d $fs ]
-        then
-          echo -e $fs" :No such file or directory" ; continue
-        fi
-
-        local info=( $(command df -P $fs | awk 'END{ print $2,$3,$5 }') )
-        local free=( $(command df -Pkh $fs | awk 'END{ print $4 }') )
-        local nbstars=$(( 20 * ${info[1]} / ${info[0]} ))
-        local out="["
-        for ((j=0;j<20;j++)); do
-            if [ ${j} -lt ${nbstars} ]; then
-               out=$out"*"
-            else
-               out=$out"-"
-            fi
-        done
-        out=${info[2]}" "$out"] ("$free" free on "$fs")"
-        echo -e $out
-    done
-}
+mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:      Makes new Dir and jumps inside
+gcreate () {curl -u 'xMeise:Pipirella&1976' https://api.github.com/user/repos -d "{\"name\":\"$1\"}"}
 
 . /usr/local/etc/profile.d/autojump.sh
 export PATH="/usr/local/opt/gettext/bin:$PATH"
