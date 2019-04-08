@@ -1,0 +1,4 @@
+## usefullShortcutsMac - written by xMeise 04/2019
+
+ctrl-cmd-f 										# toggle fullscreen view
+

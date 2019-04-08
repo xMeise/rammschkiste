@@ -73,12 +73,11 @@ brew install autojump-zsh
 ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 git config --global core.editor "subl -n -w"
 
-# glances			# monitor your system
+brew install watch 													# run a command repeatedly and displays output
+brew install geoip 													# gives geolocation data of an IP
+brew install cask 													# install Mac OS GUI apps from command line
+brew install glances 												# monitor your System 
 
-brew install glances
-
-# refind 
-
-./install-refind
+./install-refind 													# refind
 
 vin
