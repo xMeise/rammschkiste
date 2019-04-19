@@ -15,9 +15,6 @@ sudo deluser BENUTZERNAME               # delete user
 sudo usermod -aG sudo BENUTZERNAME      # switch user into usergroup sudo
 passwd                                  # change login password
 
-df -ah 									# check free disk space, options all file systems, human readable
-du -sh directory/						# check the size of a directory
-
 sudo netstat	-tulpn					# check for open ports, options tcp, udp, listening, port, number, with sudo you can view the PID
 
 ps aux | grep [processName]				# check CPU usage of a process
@@ -29,3 +26,12 @@ mount 									# check all mounted devices
 less /etc/fstab							# automatically mount volume at boot
 
 man [command] 							# manual pages of a command, to look up something what you don´t know
+
+reboot 									# reboot system
+init 6						            # reboot system
+
+# files and directories
+tar -xcvf 								# unzip file
+chmod +x /file 					 		# change rights of a file, make it executable
+df -ah 									# check free disk space, options all file systems, human readable
+du -sh directory/						# check the size of a directory
