@@ -26,3 +26,10 @@ gpg -c datei.txt						# encrypt a file or folder with password
 
 rsync --progress Datei Dateikopie 		# copy file and shows progress
 ls -tlr 								# list directory sorted by creation date
+
+# shortcuts
+
+cmd+r 									# scroll through history
+kill r<TAB> 							# kill processes
+ls -<TAB> 								# figure out how commands work
+alias | grep git 						# shows aliases for git
