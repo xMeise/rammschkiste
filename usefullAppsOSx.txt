@@ -59,6 +59,9 @@ brew install watch 													# run a command repeatedly and displays output
 brew install geoip 													# gives geolocation data of an IP
 brew install cask 													# install Mac OS GUI apps from command line
 brew install glances 												# monitor your System 
+brew install tty-clock 												# clock for terminal
+brew install cowsay 												# cow with speech bubble
+brew install fortune 												# sayings
 
 ./install-refind 													# refind
 

@@ -30,8 +30,18 @@ man [command] 							# manual pages of a command, to look up something what you 
 reboot 									# reboot system
 init 6						            # reboot system
 
+sudo rm /etc/ssh/ssh_host_*				# 
+sudo dpkg-reconfigure openssh-server	# remove SSH key and create a new one
+sudo service ssh restart				#
+
+# network
+ssh-keygen -t rsa						# create private and public keypair
+ssh-copy-id pi@192.168.1.193			# copy private key to remote computer
+ssh pi@192.168.1.193 					# ssh remote login
+
 # files and directories
 tar -xcvf 								# unzip file
-chmod +x /file 					 		# change rights of a file, make it executable
+chmod +x /file 					 		# change rights of a file, make it executable‚
 df -ah 									# check free disk space, options all file systems, human readable
 du -sh directory/						# check the size of a directory
+
