@@ -1,47 +1,71 @@
-## basicLinuxCommands - written by xMeise 03/2019
+## basicLinuxCommands - written by xMeise 03/2019 last updated on 11/2019
 
 
 # system
-uname -a 							    # shows kernel version, options all
-service udev status 					# manage services, on old system
-systemctl status udev                   # manage services, on newer systems
+uname -a 							    			 # shows kernel version, options all
+service udev status 					 			 # manage services, on old system
+systemctl status udev                  				 # manage services, on newer systems
 
-ifconfig 								# check systems current ip address
-ip addr show eth0						# check systems current ip address
-id                                      # shows info about current user
+ifconfig 											 # check systems current ip address
+ip addr show eth0									 # check systems current ip address
+id                                     			     # shows info about current user
 
-sudo adduser BENUTZERNAME               # add new user
-sudo deluser BENUTZERNAME               # delete user
-sudo usermod -aG sudo BENUTZERNAME      # switch user into usergroup sudo
-passwd                                  # change login password
+sudo netstat	-tulpn					 			 # check for open ports, options tcp, udp, listening, port, number, with sudo you can view the PID
 
-sudo netstat	-tulpn					# check for open ports, options tcp, udp, listening, port, number, with sudo you can view the PID
-
-ps aux | grep [processName]				# check CPU usage of a process
+ps aux | grep [processName]				 			 # check CPU usage of a process
 top
 htop
 
-mount /dev/sda2 /mnt 					# mount volume sda2 on /mnt
-mount 									# check all mounted devices
-less /etc/fstab							# automatically mount volume at boot
+mount /dev/sda2 /mnt 					 			 # mount volume sda2 on /mnt
+mount 									 			 # check all mounted devices
+less /etc/fstab							 			 # automatically mount volume at boot
 
-man [command] 							# manual pages of a command, to look up something what you don´t know
+man [command] 							  			 # manual pages of a command, to look up something what you don´t know
 
-reboot 									# reboot system
-init 6						            # reboot system
+reboot 									 			 # reboot system
+init 6						             			 # reboot system
 
-sudo rm /etc/ssh/ssh_host_*				# 
-sudo dpkg-reconfigure openssh-server	# remove SSH key and create a new one
-sudo service ssh restart				#
+sudo rm /etc/ssh/ssh_host_*				 			 # 
+sudo dpkg-reconfigure openssh-server	   			 # remove SSH key and create a new one
+sudo service ssh restart				 			 #
+
+timedatectl set-timezone "Europe/Berlin" 			 # set Timezone to Europe/Berlin
+systenctl enable --now systemd-timesyncd.service 	 # autosync time
+localectl status 						 			 # view current keyboard configuration
+
+xmodmap -e "keycode 105 = 							 #
+ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 # switch commands from AltGr Key to right Control
+&& xmodmap -e "remove control = ISO_Level3_Shift"	 #
+
+# user and groups
+sudo adduser BENUTZERNAME                			 # add new user
+sudo deluser BENUTZERNAME                			 # delete user
+sudo usermod -aG sudo BENUTZERNAME       			 # switch user into usergroup sudo
+passwd                                   			 # change login password
+su root 								  			 # change user in terminal into root
+whoami 									 			 # shows current user
+useradd -m -g users -s /bin/bash duda    			 # add a user duda to group users
+userdel -r duda 						 			 # delete user duda
+
+chsh -s /bin/zsh root 					 			 # change shell into zsh for user root 
 
 # network
-ssh-keygen -t rsa						# create private and public keypair
-ssh-copy-id pi@192.168.1.193			# copy private key to remote computer
-ssh pi@192.168.1.193 					# ssh remote login
+ssh-keygen -t rsa						 			 # create private and public keypair
+ssh-copy-id pi@192.168.1.193			 			 # copy private key to remote computer
+ssh pi@192.168.1.193 					 			 # ssh remote login
 
 # files and directories
-tar -xcvf 								# unzip file
-chmod +x /file 					 		# change rights of a file, make it executable‚
-df -ah 									# check free disk space, options all file systems, human readable
-du -sh directory/						# check the size of a directory
+tar -xcvf 								 			 # unzip file
+chmod +x /file 					 		 			 # change rights of a file, make it executable‚
+df -ah 									 			 # check free disk space, options all file systems, human readable
+du -sh directory/						 			 # check the size of a directory
+find / -iname "zshrc.txt" 				 			 # search for zshrc.txt
+
+# packet manager
+sudo pacman -S atom 					 			 # install atom with pacman
+
+git clone https://aur.archlinux.org/trizen.git 		 #
+&& cd trizen && makepkg -si 						 # install packet manager trizen
+trizen -S atom 							 			 # install atom with trizen
+trizen -R atom 							 			 # deinstall atom with trizen
 

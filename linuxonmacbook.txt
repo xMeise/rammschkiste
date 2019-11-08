@@ -1,0 +1,6 @@
+## linuxonmacbook - written by xMeise 03/2019 last updated on 11/2019
+
+#Grundkonfiguration Deutsches Deutsch
+echo LANG=de_DE.UTF-8 > /etc/locale.conf
+echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf
+ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
