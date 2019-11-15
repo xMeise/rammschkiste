@@ -37,6 +37,8 @@ xmodmap -e "keycode 105 = 							 #
 ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 # switch commands from AltGr Key to right Control
 && xmodmap -e "remove control = ISO_Level3_Shift"	 #
 
+lsmod 												 # list loaded kernel modules
+
 # user and groups
 sudo adduser BENUTZERNAME                			 # add new user
 sudo deluser BENUTZERNAME                			 # delete user

@@ -4,3 +4,30 @@
 echo LANG=de_DE.UTF-8 > /etc/locale.conf
 echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf
 ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+xmodmap -e "keycode 105 = 							 	#
+ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 	#switch commands from AltGr Key to right Control
+&& xmodmap -e "remove control = ISO_Level3_Shift"	 	#
+
+#activate ethernet & wlan 
+systemctl enable dhcpcd.service
+systemctl start dhcpcd.service
+trizen -S broadcom-wl-dkms
+
+sudo wifi-menu
+
+#enable MBP fan usage
+trizen -S mbpfan-git
+sudo systemctl enable mbpfan
+sudo systemctl start mbpfan
+
+#enable automated power regulation
+sudo pacman -S tlp
+sudo systemctl enable tlp
+
+#enable thermald (overheat shutoff)
+trizen -S thermald
+sudo systemctl enable thermald
+sudo systemctl start thermald
+
+#install powertop
+sudo pacman -S powertop
