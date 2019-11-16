@@ -3,7 +3,7 @@
 
 curl -u 'xMeise:Pipirella&1976' https://api.github.com/user/repos -d "{\"name\":\"$repoName\"}" 			# create a repo on github
 
-git config --global core.editor "subl3"					# change the default editor in git to sublime
+git config --global core.editor "vim"					# change the default editor in git to vim
 
 git init												# initiate git directory
 
