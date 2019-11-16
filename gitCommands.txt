@@ -25,7 +25,7 @@ git branch -d feature_x 								# delete feature_x branch
 git push -u origin master								# push the changes to remote repository
 
 git pull 												# keep repository up to date, fetch modification and merge branch
-
+git remote -v 											# list all configured remote repositories
 
 ## most important oh-my-zsh git aliases
 
