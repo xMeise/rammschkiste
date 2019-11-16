@@ -37,7 +37,7 @@ xmodmap -e "keycode 105 = 							 #
 ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 # switch commands from AltGr Key to right Control
 && xmodmap -e "remove control = ISO_Level3_Shift"	 #
 
-lsmod 												 # list loaded kernel modules
+lsmod | sort 									     # list loaded kernel modules and sort alphanumerical
 
 # user and groups
 sudo adduser BENUTZERNAME                			 # add new user
@@ -65,6 +65,9 @@ find / -iname "zshrc.txt" 				 			 # search for zshrc.txt
 
 # packet manager
 sudo pacman -S atom 					 			 # install atom with pacman
+sudo pacman -R atom 								 # uninstall atom with pacman
+sudo pacman -Ql atom 								 # show where atom is installed
+sudo pacman -Qi atom 								 # show information about atom package
 
 git clone https://aur.archlinux.org/trizen.git 		 #
 && cd trizen && makepkg -si 						 # install packet manager trizen

@@ -5,7 +5,7 @@ echo LANG=de_DE.UTF-8 > /etc/locale.conf
 echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf
 ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 xmodmap -e "keycode 105 = 							 	#
-ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 	#switch commands from AltGr Key to right Control
+ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 	# switch commands from AltGr Key to right Control
 && xmodmap -e "remove control = ISO_Level3_Shift"	 	#
 
 #activate ethernet & wlan 
@@ -31,3 +31,9 @@ sudo systemctl start thermald
 
 #install powertop
 sudo pacman -S powertop
+
+#install sensors to see cpu temperature
+sudo pacman -S lm_sensors
+sudo sensors-detect
+sensors
+watch sensors 											# watch cpu temp in real time
