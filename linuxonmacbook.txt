@@ -9,8 +9,10 @@ ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 	# switch commands from AltGr Key
 && xmodmap -e "remove control = ISO_Level3_Shift"	 	#
 
 #install some usefull programms
-sudo pacman -Syu autojump
-source /etc/profile.d/autojump.zsh
+git clone https://github.com/wting/autojump.git
+[[ -s /home/xmeise/.autojump/etc/profile.d/autojump.sh ]] 
+&& source /home/xmeise/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
 
 #activate ethernet & wlan 
 systemctl enable dhcpcd.service
