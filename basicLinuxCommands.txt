@@ -39,6 +39,11 @@ ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 # switch commands from AltGr Key 
 
 lsmod | sort 									     # list loaded kernel modules and sort alphanumerical
 
+lsblk 												 # list storage volumes
+sudo fdisk -l 										 # list attached storage volumes
+
+echo $0												 # shows which shell is in use
+
 # user and groups
 sudo adduser BENUTZERNAME                			 # add new user
 sudo deluser BENUTZERNAME                			 # delete user
