@@ -44,6 +44,8 @@ sudo fdisk -l 										 # list attached storage volumes
 
 echo $0												 # shows which shell is in use
 
+loadkeys de-latin1 									 # load german keyboard layout
+
 # user and groups
 sudo adduser BENUTZERNAME                			 # add new user
 sudo deluser BENUTZERNAME                			 # delete user
