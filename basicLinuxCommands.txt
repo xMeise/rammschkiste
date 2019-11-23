@@ -40,7 +40,14 @@ ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 # switch commands from AltGr Key 
 lsmod | sort 									     # list loaded kernel modules and sort alphanumerical
 
 lsblk 												 # list storage volumes
+fdisk /dev/sda 										 # start partition menu on device sda
+cgdisk /dev/sda 									 # nice tool to make partitions on device
 sudo fdisk -l 										 # list attached storage volumes
+mkfs.ext4 /dev/sda1									 # format sda1 partition with ext4 filesystem
+mkswap /dev/sda2 									 # make a swap partition on sda2
+swapon /dev/sda2 									 # reinitiate swap on partition sda2
+
+genfstab -U /mnt >> /mnt/etc/fstab 					 # generate a fstab file to define how disk partitions are mounted into filesystem
 
 echo $0												 # shows which shell is in use
 
