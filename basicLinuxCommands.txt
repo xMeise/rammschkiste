@@ -88,3 +88,6 @@ git clone https://aur.archlinux.org/trizen.git 		 #
 trizen -S atom 							 			 # install atom with trizen
 trizen -R atom 							 			 # deinstall atom with trizen
 
+# usefull programms
+sudo pacman -S lxdm 								 # display manager lxdm
+systemctl enable lxdm.service  						 # start display manager after reboot

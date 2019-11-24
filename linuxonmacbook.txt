@@ -1,12 +1,20 @@
 ## linuxonmacbook - written by xMeise 03/2019 last updated on 11/2019
 
 #Grundkonfiguration Deutsches Deutsch
+loadkeys de
 echo LANG=de_DE.UTF-8 > /etc/locale.conf
-echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf
+echo KEYMAP=de-latin1 > /etc/vconsole.conf
+echo FONT=lat9w-16
+vim /etc/locale.gen           							# edit lines and uncomment de_DE.UTF-8 UTF-8 and the two other below
+locale-gen
 ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 xmodmap -e "keycode 105 = 							 	#
 ISO_Level3_Shift Meta_R Alt_R Meta_R Alt_R" 		 	# switch commands from AltGr Key to right Control
 && xmodmap -e "remove control = ISO_Level3_Shift"	 	#
+
+sudo vim /etc/modprobe.d/hid_apple.conf					# fix tilde key an f# keys
+#options hid_apple iso_layout=0
+#options hid_apple fnmode=2
 
 #install some usefull programms
 git clone https://github.com/wting/autojump.git
@@ -43,3 +51,15 @@ sudo pacman -S lm_sensors
 sudo sensors-detect
 sensors
 watch sensors 											# watch cpu temp in real time
+
+#keyboard light
+trizen -S kbdlight
+
+#display brightness
+trizen -S light-git
+light -S 50
+
+#touchpad
+pacman -S xf86-input-synaptics
+xinput set-button-map 12 1 2 3 5 4 7 6
+
