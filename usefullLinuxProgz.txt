@@ -1,3 +1,12 @@
 ## usefull Linux Progz - version 0.0.1 written by xMeise 11/2019
 
 
+http://github.com/VundleVim/Vundle.Vundle.Vim  #plug-in manager for vim
+
+packer -s ranger							   #file manager vim look
+ranger --copy-config=all					   #
+
+https://aur.archlinux.org/yay.git 			   #package wrapper for pacman and aur		   
+cd yay
+makepkg -si
+
