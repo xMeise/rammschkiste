@@ -3,7 +3,7 @@
 
 #plug-in manager for vim
 http://github.com/VundleVim/Vundle.Vim         
-:PluginInstall 								   
+:PluginInstall #enter in vim								   
 
 #file manager and package wrapper for pacman and aur
 packer -s ranger							   
@@ -12,4 +12,8 @@ ranger --copy-config=all
 git clone https://aur.archlinux.org/yay.git   	   
 cd yay
 makepkg -si
+
+#desktop theme manager
+yay nitrogen
+nitrogen /path/to/image/directory
 
