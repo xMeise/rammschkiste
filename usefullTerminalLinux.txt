@@ -1,0 +1,4 @@
+#!/bin/basht
+## usefullTerminalLinux - version 0.0.1 written by xMeise 02/2021
+
+
