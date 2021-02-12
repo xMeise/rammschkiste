@@ -1,3 +1,4 @@
+#!/bin/bash
 ## gitCommands - version 0.0.2 written by xMeise 03/2019
 
 
